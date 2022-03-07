@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 import InProps from './StylesReact/InProps';
+import TodoListStatefull from './ClassAndFunctional/TodoListStatefull';
+// import TodoListStateless from './ClassAndFunctional/TodoListStateless';
+import TodoListFunctional from './ClassAndFunctional/TodoListFuncional';
+import Fetch from './Api/Fetch';
 import './App.css';
 
 const divStyle = {
@@ -21,6 +25,14 @@ function App() {
       <DivStyle>
         aloha
       </DivStyle>
+      <p>------------------------------</p>
+      <p>Class Components</p>
+      <TodoListStatefull />
+      {/* <TodoListStateless /> */}
+      <p>Function Components</p>
+      <TodoListFunctional />
+      <p>-------------------------------</p>
+      <Fetch />
     </>
   );
 }
